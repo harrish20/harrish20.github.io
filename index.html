@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. R. Harrish | Portfolio</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/3057400655.js" crossorigin="anonymous"></script>
+    <meta name="description"
+        content="Professional portfolio of S. R. Harrish - MCA (Generative AI), Python Developer, IoT & AI Enthusiast, and UI/UX Designer.">
+</head>
+
+<body>
+
+    <!-- Background Orbs -->
+    <div class="glow-orb-1"></div>
+    <div class="glow-orb-2"></div>
+
+    <!-- Header Navigation -->
+    <header id="header-nav">
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="S.R. Harrish Logo" class="logo-img">
+                    <span class="logo-text">S.R. HARRISH</span>
+                </div>
+                <ul id="sidemenu" class="nav-menu">
+                    <li><a href="#hero" class="nav-link active">HOME</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="#services" class="nav-link">SERVICES</a></li>
+                    <li><a href="#portfolio" class="nav-link">MY WORK</a></li>
+                    <li><a href="#CONTACT" class="nav-link">CONTACT</a></li>
+                    <button class="menu-btn" onclick="closemenu()"><i class="fas fa-times"></i></button>
+                </ul>
+                <button class="menu-btn" onclick="openmenu()"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="tagline">Welcome to my space</span>
+                    <h1>Hi, I'm <span>S.R. Harrish</span></h1>
+                    <p class="hero-desc">
+                        MCA Candidate in Generative AI at SRM University. Python Developer, IoT & Embedded Systems
+                        Engineer, and UI/UX Designer. Bridging the gap between software intelligence and hardware
+                        automation.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#portfolio" class="btn btn-primary">View My Work <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#CONTACT" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-visual-wrapper">
+                        <div class="hero-visual-inner">
+                            <img src="img/logo.png" alt="Branding Illustration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Discover</span>
+                <h2 class="sub_title">About <span>Me</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <!-- Summary / Info -->
+                <div class="about-summary">
+                    <p>
+                        I am a highly motivated Computer Science graduate (CGPA: <strong>9.58/10</strong>) currently
+                        pursuing an MCA in Generative AI. My passion lies at the intersection of Python development,
+                        Internet of Things (IoT), Computer Vision, and UI/UX Design. I love building smart hardware
+                        solutions, training computer vision systems, and designing pixel-perfect user interfaces that
+                        deliver intuitive experiences.
+                    </p>
+                    <div class="about-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Location</span>
+                            <span class="meta-value">Chennai, India</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Email</span>
+                            <span class="meta-value"><a
+                                    href="mailto:harrish20092005@gmail.com">harrish20092005@gmail.com</a></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">GitHub</span>
+                            <span class="meta-value"><a href="https://github.com/harrish20"
+                                    target="_blank">github.com/harrish20</a></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">LinkedIn</span>
+                            <span class="meta-value"><a href="https://www.linkedin.com/in/harrishsr"
+                                    target="_blank">linkedin.com/in/harrishsr</a></span>
+                        </div>
+                    </div>
+                    <a href="img/Harrish_Resume_v2.pdf" class="btn btn-primary" target="_blank">Download CV <i
+                            class="fa-solid fa-file-arrow-down"></i></a>
+                </div>
+
+                <!-- Interactive Tabs Section -->
+                <div class="about-tabs-container">
+                    <div class="table_titles">
+                        <p class="table_links active_link" onclick="opentab('Skills')">Skills</p>
+                        <p class="table_links" onclick="opentab('Education')">Education</p>
+                        <p class="table_links" onclick="opentab('Experience')">Experience</p>
+                        <p class="table_links" onclick="opentab('Certifications')">Certifications</p>
+                    </div>
+
+                    <!-- Skills Tab -->
+                    <div class="table_content active_tab" id="Skills">
+                        <ul class="skills-list">
+                            <li><i class="fa-brands fa-python"></i> Python</li>
+                            <li><i class="fa-solid fa-microchip"></i> Arduino & ESP32</li>
+                            <li><i class="fa-solid fa-camera"></i> OpenCV & OCR</li>
+                            <li><i class="fa-brands fa-figma"></i> Figma (UI/UX)</li>
+                            <li><i class="fa-brands fa-android"></i> Android Studio</li>
+                            <li><i class="fa-solid fa-database"></i> Firebase</li>
+                            <li><i class="fa-solid fa-brain"></i> Generative AI Tools</li>
+                            <li><i class="fa-brands fa-git-alt"></i> Git & GitHub</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Tab -->
+                    <div class="table_content" id="Education">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-year">2025 - Present</span>
+                                <h4 class="timeline-title">Master of Computer Applications (Generative AI)</h4>
+                                <p class="timeline-desc">SRM University, Ramapuram Campus</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-year">2022 - 2025</span>
+                                <h4 class="timeline-title">Bachelor of Science in Computer Science</h4>
+                                <p class="timeline-desc">SRM University | CGPA: 9.58 / 10</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Tab -->
+                    <div class="table_content" id="Experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-year">July 2023</span>
+                                <h4 class="timeline-title">Android Development Intern</h4>
+                                <span class="timeline-year">Spark Inventive</span>
+                                <p class="timeline-desc">Gained practical knowledge in mobile layouts, activity
+                                    lifecycle, and visual UI components using Android Studio.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-year">March 2023 - March 2024</span>
+                                <h4 class="timeline-title">Event Coordinator</h4>
+                                <span class="timeline-year">SRMIST Ramapuram CS Debugging Competition</span>
+                                <p class="timeline-desc">Managed participant logistics, event execution, and technical
+                                    troubleshooting during the CS Debugging Competition.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications & Achievements Tab -->
+                    <div class="table_content" id="Certifications">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-year">Achievements</span>
+                                <h4 class="timeline-title">🏆 3rd Prize - SRM IST Project Day 2024</h4>
+                                <p class="timeline-desc">Won for the Autonomous Advertising Rover project.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-year">Competitions</span>
+                                <h4 class="timeline-title">🥈 Runner-Up - Knack O Fest 2023 CS Quiz</h4>
+                                <p class="timeline-desc">Represented department in technical quiz contest.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-year">Certification</span>
+                                <h4 class="timeline-title">The Joy of Computing using Python</h4>
+                                <p class="timeline-desc">NPTEL Certified Course.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Offer</span>
+                <h2 class="sub_title">My <span>Services</span></h2>
+            </div>
+            <div class="services_list">
+                <div>
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design user-friendly, responsive interfaces and mockups in Figma that seamlessly blend
+                        aesthetics with functionality.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Android Dev</h2>
+                    <p>Creating responsive, native interfaces and implementing basic app features inside Android Studio.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>IoT & Embedded</h2>
+                    <p>Designing autonomous embedded systems using ESP32, Arduino, and sensors with real-time Firebase
+                        syncing.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python & CV</h2>
+                    <p>Building computer vision automation pipelines with OpenCV and automating workflows using Python
+                        scripts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Work Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Showcase</span>
+                <h2 class="sub_title">My <span>Work</span></h2>
+            </div>
+
+            <div class="work-list">
+                <!-- Project 1 -->
+                <div class="work">
+                    <div class="work-img-container">
+                        <img src="img/rover.png" alt="Autonomous Advertising Rover">
+                    </div>
+                    <div class="work-info">
+                        <div>
+                            <div class="work-tags">
+                                <span>Python</span>
+                                <span>Arduino</span>
+                                <span>IoT</span>
+                                <span>Embedded</span>
+                            </div>
+                            <h3>Autonomous Advertising Rover</h3>
+                            <p>An autonomous line-following advertising rover equipped with obstacle avoidance using
+                                ultrasonic and IR sensors. Designed to help small businesses dynamically display
+                                advertisements.</p>
+                        </div>
+                        <div class="work-footer">
+                            <span class="work-prize"><i class="fa-solid fa-trophy"></i> 3rd Prize (Project Day
+                                '24)</span>
+                            <a href="https://github.com/harrish20" target="_blank" class="work-link"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="work">
+                    <div class="work-img-container">
+                        <img src="img/parking.png" alt="Smart Car Parking System">
+                    </div>
+                    <div class="work-info">
+                        <div>
+                            <div class="work-tags">
+                                <span>ESP32</span>
+                                <span>OpenCV</span>
+                                <span>Firebase</span>
+                                <span>Flask</span>
+                                <span>IoT</span>
+                            </div>
+                            <h3>Smart Car Parking System</h3>
+                            <p>An IoT-enabled parking management solution integrating ESP32-CAM, Flask, and Firebase.
+                                Implements license plate recognition (ANPR) with OpenCV/OCR for automated billing.</p>
+                        </div>
+                        <div class="work-footer">
+                            <span class="work-prize"><i class="fa-solid fa-file-lines"></i> Research Paper
+                                Published</span>
+                            <a href="https://github.com/harrish20" target="_blank" class="work-link"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="work">
+                    <div class="work-img-container">
+                        <img src="img/trading_system.png" alt="Dynamic Online Trading Optimization System">
+                    </div>
+                    <div class="work-info">
+                        <div>
+                            <div class="work-tags">
+                                <span>Python</span>
+                                <span>Data Analytics</span>
+                                <span>Optimization</span>
+                                <span>Algorithms</span>
+                            </div>
+                            <h3>Dynamic Trading Optimization</h3>
+                            <p>An analytical model in Python developed to enhance dynamic pricing strategies for online
+                                trading platforms. Applied advanced optimization techniques to refine pricing accuracy
+                                and forecast business revenue.</p>
+                        </div>
+                        <div class="work-footer">
+                            <span class="work-prize"><i class="fa-solid fa-chalkboard-user"></i> Presented at RTACT
+                                '24</span>
+                            <a href="https://github.com/harrish20" target="_blank" class="work-link"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Academic Contributions Section -->
+    <section id="publications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academic</span>
+                <h2 class="sub_title">Research & <span>Papers</span></h2>
+            </div>
+
+            <div class="pub-cert-grid">
+                <!-- Papers List -->
+                <div>
+                    <h3 style="margin-bottom: 25px; font-family: var(--font-heading);">Presented Research Papers</h3>
+                    <div class="card-list">
+                        <div class="pub-card">
+                            <div class="card-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                            <div class="card-content">
+                                <h4>IoT-Driven Smart Parking Management System: Enhancing Efficiency and Automation</h4>
+                                <p>Presented research documenting parking system automation, cloud databases, and
+                                    automatic number plate recognition.</p>
+                            </div>
+                        </div>
+                        <div class="pub-card">
+                            <div class="card-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                            <div class="card-content">
+                                <h4>Dynamic Online Trading Optimization System</h4>
+                                <p>Presented research paper at RTACT 2024 (SIMATS Engineering) on dynamic pricing
+                                    strategies and optimization techniques.</p>
+                            </div>
+                        </div>
+                        <div class="pub-card">
+                            <div class="card-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                            <div class="card-content">
+                                <h4>Autonomous Advertising Rover</h4>
+                                <p>Presented on design principles, sensor integration, and micro-mobility applications
+                                    for small business displays.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications List -->
+                <div>
+                    <h3 style="margin-bottom: 25px; font-family: var(--font-heading);">Professional Certifications</h3>
+                    <div class="card-list">
+                        <div class="cert-card">
+                            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="card-content">
+                                <h4>Introduction to Cybersecurity</h4>
+                                <p>Cisco Networking Academy | Mar 2026</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="card-content">
+                                <h4>Data Analytics Job Simulation</h4>
+                                <p>Deloitte Australia (via Forage) | Jan 2026</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="card-content">
+                                <h4>Deep Learning using OpenPose</h4>
+                                <p>Infosys Springboard | 2023</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="card-icon"><i class="fa-brands fa-python"></i></div>
+                            <div class="card-content">
+                                <h4>The Joy of Computing using Python</h4>
+                                <p>NPTEL | 2024</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="card-icon"><i class="fa-brands fa-android"></i></div>
+                            <div class="card-content">
+                                <h4>Android Development Internship</h4>
+                                <p>Spark Inventive | Jul 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="CONTACT">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="sub_title">Contact <span>Me</span></h2>
+            </div>
+
+            <div class="contact-card">
+                <h3 style="font-family: var(--font-heading); font-size: 28px; margin-bottom: 15px; text-align: center;">
+                    Let's Collaborate</h3>
+                <p
+                    style="text-align: center; color: var(--color-text-muted); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Have an interesting project or opportunities in AI, IoT, Python Development, or UI/UX Design? Feel
+                    free to reach out to me directly through any of the channels below!
+                </p>
+
+                <div class="contact-grid-info">
+                    <a href="mailto:harrish20092005@gmail.com" class="contact-info-item">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <span class="contact-info-title">Email</span>
+                        <span class="contact-info-value">harrish20092005@gmail.com</span>
+                    </a>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="contact-info-title">Location</span>
+                        <span class="contact-info-value">Chennai, India</span>
+                    </div>
+                    <a href="https://www.linkedin.com/in/harrishsr/" target="_blank" class="contact-info-item">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span class="contact-info-title">LinkedIn</span>
+                        <span class="contact-info-value">linkedin.com/in/harrishsr</span>
+                    </a>
+                    <a href="https://github.com/harrish20" target="_blank" class="contact-info-item">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="contact-info-title">GitHub</span>
+                        <span class="contact-info-value">github.com/harrish20</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <p>&copy; 2026 S. R. Harrish. Made with passion & code.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Navbar Scrolled background
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header-nav');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Tab switching logic
+        const table_links = document.getElementsByClassName("table_links");
+        const table_content = document.getElementsByClassName("table_content");
+
+        function opentab(tabname) {
+            for (let link of table_links) {
+                link.classList.remove("active_link");
+            }
+            for (let content of table_content) {
+                content.classList.remove("active_tab");
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+
+        // Mobile Menu Drawer logic
+        const sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.classList.add("open");
+        }
+        function closemenu() {
+            sidemenu.classList.remove("open");
+        }
+
+        // Auto Close Mobile Menu when clicking link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sidemenu.classList.remove('open');
+            });
+        });
+
+        // Active Link Scroll Highlighting
+        window.addEventListener('scroll', () => {
+            let currentSection = '';
+            const sections = document.querySelectorAll('section');
+            const scrollPos = window.scrollY + 200;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // No contact form submission required.
+    </script>
+</body>
+
+</html>
